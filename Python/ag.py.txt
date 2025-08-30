@@ -1,0 +1,25 @@
+from datetime import datetime
+def calculate_age(birth,current):
+    # convert to string to date
+    birth_date=datetime.strptime(birth,"%Y-%m-%d")
+    current_date=datetime.strptime(current,"%Y-%m-%d")
+    if birth_date>current_date:
+        print("data of birth not exist")
+    years=current_date.year-birth_date.year
+    months=current_date.month-birth_date.month
+    days=current_date.day-birth_date.day
+    
+    # Adjust if negative
+    if days < 0:
+        months -= 1
+        days += (birth_date.replace(month=birth_date.month + 1, day=1) - birth_date.replace(day=1)).days
+
+    if months < 0:
+        years -= 1
+        months += 12
+
+    return f"Age: {years} years, {months} months, {days} days"
+    
+birth_day=(input("Enter the Birth date (YYYY-MM-DD) :  "))
+current_day=(input("Enter the Current date (YYYY-MM-DD) :  " ))
+print(calculate_age(birth_day,current_day))

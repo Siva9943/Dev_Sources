@@ -1,0 +1,71 @@
+Git - Version control System 
+	Track Changes
+	created by Linus Torvalds (linux) - 2005
+GitHub - Cloud based Platform
+	Hosting and managing Git Repo
+	Central repo
+	Collaboration
+	CI/CD Support - automate testing & deployment with GitActions
+	Documentation
+	june -2018 own microsoft
+
+create new repository
+git clone url
+(new user)
+git config --global user.name ""
+git config --global user.email ""
+git add .         - ready for staging
+git commit -m "msg"    - staging
+git push          or    git push origin main (syntax => origin - repo_url )
+
+
+#brach 
+# view current branch
+git branch       
+#View all branch (branch status)
+git branch -a
+#create new branch
+git checkout -b "front-end"
+#rename branch
+git branch -M "rename"
+#switch branch
+git checkout main       - branch name last
+
+#pull request  - the 2 different branch change our code request for "main" branch
+#main branch accept the pull request and merge 2 branch's
+
+#merge conflict
+# both branch's change particular line , solve:discuss what will be use....
+#issue : different code in particular line
+
+#git stash   - like recycle bin  - storing an stack method
+#how to create a error => clode repo add 1 line ,local add same line => git pull "issue"
+git stash       -delete local repo line to stash
+#i need the stash code 
+git stash pop    - conflict  
+
+
+git log  - View All Changes Commit "cmd"
+git diff  - view modify status files
+git status      - know for file tracked or untracked  (file status)
+git pull  -change for any files in repository to affact to local repo
+git reset  -undo for privious change
+
+#read.md
+markdown file
+# mardown cheetsheet
+conventional_commits.org - (fix:"msg"  , feat:""  , Refactor:"rename var "  , docs:"", !fix:"braking news" )
+staging 
+unstaging
+U - untrack
+M - modify
+.git (hidden folder) communication between local repository and cloud rep
+
+
+heroku login
+git clone https://github.com/heroku/python-getting-started.git
+cd python-getting-started
+heroku create
+git push heroku main
+heroku ps:scale web=1
+heroku open
