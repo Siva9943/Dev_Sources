@@ -18,8 +18,9 @@ git add .         - ready for staging
 git commit -m "msg"    - staging
 git push          or    git push origin main (syntax => origin - repo_url )
 
+git remote add origin url  ==> to update with local to online without clone 
 
-#brach 
+#branch 
 # view current branch
 git branch       
 #View all branch (branch status)

@@ -1,0 +1,25 @@
+create repositories new
+add readme
+copy the http url
+******** local folder*****
+create folder (run an cmd)
+git clone url    (auto create project folder)
+***********move to inside folder***********
+copy the project files into this file
+run on cmd
+**************
+git status
+git add .   (add all files)
+git commit -m day1   (day1 is a savepoint )
+*****************new user********
+git config --global user.email "your-email@example.com"
+git config --global user.name "password"
+*********************************
+git push url
+
+go to repository >settings>pages>branch>none to main >save 
+get link few min
+
+PS G:\mca> git remote add origin https://github.com/Siva9943/Farmer_website.git
+PS G:\mca> git branch -M main
+PS G:\mca> git push -u origin main
