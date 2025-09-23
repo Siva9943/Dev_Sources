@@ -1,0 +1,59 @@
+Plan for Back to form:
+Problem solving:
+1)math
+2)DS - List,tuple,set,dict,String
+3)DSA with Sorting 
+
+C/C++(core + )
+1)math
+2)DS - Array,String
+
+Apptitude:
+1)GeekforGreeks
+
+Programming:
+python (core + Master)
+	-threading
+	-json
+	-ect...
+javascript(core+Intermedium)
+	-functions
+	-asyn,await
+	-promises
+	-json
+	ect...
+Testing:
+	Unit test
+	Manual testing
+	Debuging
+Planning:
+	System design,Architecture (Basic)
+Database:
+	Basic Query's
+	join
+	ER-Diagram
+Deployment:
+	-Docker(Basic)
+	
+Basic's:
+operating system
+networking - https,tcp/ip
+	-switch
+	-OSI model
+Interview:
+	-Dressing sense
+	-Basic communication
+		-self intro
+		-HR common repeted questions
+	-Answer with example or synario based explanation
+
+Pratices:
+	-Writen based problem solving
+	-Leedcode -DSA problem
+	-Hackerrank
+	-GeekforGeeks(first complete)
+Pending:
+	-Project Responcive
+	-Project some menu's are incompleted
+	-Profile Update
+	-Note Applying company and our site info.
