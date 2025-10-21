@@ -1,0 +1,174 @@
+<!--
+command line:
+	<!--   -->
+
+<link rel="stylesheet" type="text/css" href="path"/>
+<script src="path"> </script>
+<img src="path" alt=""/>
+attributes:
+	additional info of html elements
+	a specific start tag
+	name="value" pairs
+file format .html / .htm
+<a href="path / web link" /> , form , base 
+	target="_blank" - new tab
+	target="_self"  - same tab
+	target="_parent" - open parent frame
+	targer="_top"    - full body of the window
+	framename        - specific framename
+Box model:
+	margin - border- padding 
+	box-sizing:border-box => not affacted width and height with padding
+formating elements:
+	<b>
+	<strong>
+	<i>
+	<em>
+	<mark>
+	<sub>
+	<sup>
+	<small>
+	<del>
+list:
+	order list
+		<ol style="list-style:disc,circle,square,lower-roman,upper-roman,lower-alpha,upper-alpha,decimal"><li>hii</li></ol>
+		<ul>
+		<dl>
+			<dt> - question
+			<dd> - answer
+table:
+	colspan,rowspan,border-collapse:collapse
+
+<table>
+<tr>
+	<th>head</th>
+	<th>title</th>
+</tr>
+<tr>
+	<td>siva</td>
+	<td>this is siva</td>
+</tr>
+
+</table>
+-->
+float:left / right and clear:left/right
+****************************************
+<div>
+	<div style="width:100px; height:100px;background:red;float:left; "></div>
+	<div style="width:100px;height:100px;background:blue;float:left;"></div>
+	<div style="width:100px;height:100px;background:yellow;float:left"></div>
+</div>
+
+form attributes
+**************
+action=""
+method=""
+href=""
+label - for=""
+input - id="" name="" , type="text/email/radio/time/date/password/search/tel/url/number/range/submit" 
+  min="0" max="10" for number / range control
+<br/>
+<br/>
+<input type="time"/>
+<input type="url"/>
+<input type="number" min="0" max="10"/>
+<input type="range" max="30"/>
+<input type="month"/>
+<div>
+<form>
+<input type="checkbox" />
+input ...   - same name="", for example name="hobbies"
+</form>
+</div>
+
+radio btn:
+same , name="gender"  value="male" , value="female"
+ 
+checked - attribute to set default value , user without select....
+<input type="radio" name="gender" value="male" checked />
+
+disabled - disabled option
+
+
+<select name="cars">
+	<optgroup label="elect">
+		<option value="tesla"> test</option>
+
+	<optgroup label="esdf">
+		<option value="tesls"> test2</option>
+</select>
+
+attributes: required=true ,
+
+<textarea cols="20" row="23" >  - resize="none"
+
+sematic elements:
+*********************
+<header>
+<nav>
+<section>
+<article>
+<aside>
+<footer>
+
+Entites:
+	&nbsp;
+<video width="" height="" control autoplay loop muted>
+	<source src=".mp4"  />
+	<source src=".ogg"/>
+	type="video/mp4"
+</video>
+
+<audio control autoplay loop></audio>
+type="audio/mpeg"
+	 
+marquee = direction="up/right/down/left" , scrollamount="100",behaviour="slide/scroll/alternate"
+
+padding:top/right/down/left
+padd  : top  right/left  buttom
+padd  : top/bottom  right/left
+
+background-color
+	  -image:url()
+	  -position:20px 40px   => x y
+          -repeat:no-repeat / repeat / repeatX / repeatY
+	  -attachment:fixed/scroll
+	  -clip:text; = > color:transparent
+
+a:link
+a:visited
+a:hover
+a:focus
+
+
+selectors:
+************
+1)universal selector *{}
+2)simple selector (id,name,class)
+3)combinators => descentant selector (space) , child (>) , adjacent selector (+) , general (~)
+4)attribute selector
+
+5)pseudocode element = > ::first-line , ::first-letter , ::before , ::after ,::selection
+6)pseudocode class => 
+	selector:pseudocode-class{}
+	:firstchild
+	:lastchild
+	:nth-child(3)
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,117 @@
+C-Programming Revise:
+C-tokens:
+	tokens are smallest element in this program,which is meaning full the complier.
+	keywords,identifiers,const,var,strings,operators
+#include <stdio.h>
+void main(){
+	int value;
+	scanf("%d",&value)
+	printf("%d",value);
+}
+ int main() => return 0
+ void main() => not return
+
+***********
+forloop:
+***********
+for(init;condition;incre/decre){
+	//statements
+}
+**********
+whileloop:
+**********
+while(condition){
+	//statements
+}
+*********
+do while:
+**********
+do{
+	//statements
+}while(condition)
+
+switch case:
+************
+switch(data){
+
+case data:
+
+case data:
+
+default:
+
+}
+
+Function:
+
+return_type function_name(arguments){
+	//statements
+return 0
+}
+
+Standard Library function:
+***************************
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+#include <time.h>
+#include <setjmp.h>
+#include <stdlib.h>
+#include <string.h>
+PreDirective processor ()
+call by value (copy of value ,not affacted original value , different location)
+call by reference(original value can be changed (using & and *))
+
+Strings:
+char str[4]={'s','i','v','\0'}  \0 => null termination   => automatically taken , i will put menually
+methods:
+strcpy(s1,s2)
+strcat(s1,s2)
+strlen(s1)
+
+
+structure:
+	is a collection of elements to store in different memory and different datatype.
+						****************     ******************
+struct s_name{
+	
+ 	float r,f;
+}object;
+
+declaration:
+struct s_name object;
+print("acess the struct data",object.r , object.f)
+
+Union:
+******
+ Is a group of elements to stored in some memory and different datatype.
+union union_name
+{
+	int a,b;
+}obj;
+
+ 
+Pointer
+*******
+	Is a variable that hold on a address of another value.
+	dynamic memery location will be provide
+	& => to hold a address value
+	* => to hold a adress of value
+Pointer + structure
+	->access the member
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
