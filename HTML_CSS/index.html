@@ -154,6 +154,77 @@ selectors:
 	:firstchild
 	:lastchild
 	:nth-child(3)
+	ul li:lastchild{}
+flex:
+	display:flex
+	justify-content:center , left,right 
+	align-items: ,,
+	align-content:,,
+	gap:20px;
+	flex-direction:column
+	,, :row-reverse
+	   :column-reverse
+    display:block;
+    display:inline;
+    display:inline-block; use height and width
+    display:none;
+    visiblity:hidden;
+    opacity:0,1
+responsive:
+***********
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+@media only screen and (min-width:300px) and (max-width:600px){}
+@media (max-width:300px){}
+mobile: 300px - 600px
+tab : 600px - 900px
+laptop:900px-1500px
+desktop:>1500px
+
+grid  - page layout
+*******
+display:grid;
+grid-template-column:auto auto auto auto;
+			30% 30%;
+
+column-gap/row-gap/gap:6px;
+grid-template-column:repeat(4,1fr);
+grid-template-column:repeat(auto-fit/auto-fill,minmax(300px,1fr))
+
+grid-template-row:100px 200px 300px;
+grid-auto-flow:row ==> default
+
+grid-column-start:1;
+grid-column-end:3;
+    		shorthand => grid-column:1/3; , grid-column:span 3;
+justify-self:center = > only change particular box
+Areas:
+***********
+ grid-template-areas: 
+"header header header"
+"sec aside article"
+"f f f";
+
+.header{
+	grid-area:header;
+}
+
+grid-template-row:20vh 50vh 20vh;
+
+wrap:
+****  work on pixel only
+flex-wrap:wrap; - next line to move box - use for responsive 
+flex-grow:1; 0/1   - empty space occupied   - each box or paticular box
+flex:1 
+order:1 ... ect to swap box order....
+flex-direction:column;
+	opposite to reacted justify & align
+flex-shrink:0  => can't decrese box size
+
+
+
+
+ 
+	
 
 
 

@@ -1,0 +1,64 @@
+Database Optimize effectively:
+------------------------------
+	optimization query:
+		select_related()
+		prefetch_related()
+	ex:
+		db_name.object.select_related('customer');
+avoid:
+------
+	User.Object.all()
+fix:
+-----
+	User.Object.only('id','name','place')
+use index:
+----------
+	name=models.charField(max_length=30,db_index="True")
+Use Query caching:
+------------------
+timeed data cache
+---
+from django.core.cache import cache
+
+def get_market_prices(request):
+    data = cache.get('market_prices')
+    if not data:
+        data = list(Market.objects.values())  # DB hit
+        cache.set('market_prices', data, 60)  # Cache for 1 minute
+    return JsonResponse(data, safe=False)
+
+Use pagination for Large data
+------------------------------
+from rest_framework.pagination import PageNumberPagination
+
+class MyPagination(PageNumberPagination):
+    page_size = 10
+
+class ProductListView(generics.ListAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    pagination_class = MyPagination
+
+Optimize Database Schema
+-------------------------
+ =>Use appropriate data types (e.g., IntegerField instead of CharField for numbers)
+
+ =>Remove redundant fields
+
+ =>Normalize relationships where possible
+
+ =>Avoid storing large blobs/files directly in DB (use file storage instead)
+
+Asynchronous Tasks (for heavy logic)
+------------------------------------
+ =>If API performs time-consuming tasks (e.g., sending email, data processing), offload them.
+
+Use:
+----
+ =>Celery with Redis
+ =>or async views (Django 3.1+ supports them)
+Improvement: Keeps API lightweight and responsive.
+------------
+
+
+
