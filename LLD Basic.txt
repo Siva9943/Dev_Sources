@@ -1,0 +1,53 @@
+LLD: Low level Design
+---------------------
+1)LLD is the blueprint that guides developers on how to implement specific components of a system, such as classes, methods, algorithms, and data structures.
+Requirement
+Design
+Construction
+Implemention
+HLD us LLD difference?
+HLD:
+	Overall architecture maintain, such as frameworks,databases..
+LLD:
+	focuse on components,modules,algorithms.
+
+Step 1. Understanding Object-Oriented Principles
+----------------------------------------------------------------------
+Encapsulation: Bundling data and the methods that operate on that data within one unit.
+Inheritance: Mechanism where a new class can inherit the properties and methods of an existing class.
+Polymorphism: Ability of different classes to respond to the same method in different ways.
+Abstraction: Hiding the complex implementation details while showing only the essential features of an object.
+
+Step 2. Analyzing and Designing Components
+----------------------------------------------------------------
+Identifying classes and objects based on the system requirements.
+Determining relationships (like associations, inheritance, etc.) between different entities.
+Using SOLID principles to ensure your design is clean, maintainable, and scalable.
+
+Step 3. Implementing Design Patterns
+------------------------------------------------------
+Design patterns are reusable solutions
+Creational Patterns
+Behavioral Patterns
+Structural Patterns
+
+Step 4. Use of UML Diagram in LLD
+-------------------------------------------------
+	- Unified Modeling Language
+Coverting HLD to LLD
+clear visual representation of the components and their relationships.
+Class Diagrams: Represent the structure classes and the relationships between them.
+Sequence Diagrams: Illustrate how objects interact over time, showing the sequence of method calls.
+Activity Diagrams: Show the workflow or activities of a system component.
+State Diagrams: Represent the different states of a component or object and the transitions between these states.
+Use Case Diagrams: Define the functional requirements of the system by showing different user interactions.
+
+5. Implementing SOLID Principles
+-----------------------------------------------
+optimal designing. In order to write scalable, flexible, maintainable, and reusable code:
+Single-responsibility principle (SRP)
+Open-closed principle (OCP)
+Liskov’s Substitution Principle(LSP)
+Interface Segregation Principle (ISP)
+Dependency Inversion Principle (DIP)
+ its just guidence not strictly follow them.

@@ -4,7 +4,6 @@ class FindLastNum:
     def findLastNum(n):
         num=str(n)
         last=num[len(num)-1]
-        
         return int(last)
 
 print(FindLastNum.findLastNum(1230245))
