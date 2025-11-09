@@ -8,3 +8,5 @@ Binary Search
 Sliding window
 Two pointer
 Basic Dynamic Programming
+
+==   __eq__()    alternate  using "is" - identity operator
