@@ -12,14 +12,14 @@
 //await => makes an async function wait for a promise
 
 async function dog_Promise(){
-    return new Promise((resolve,reject)=>{
+    return new Promise((res,rej)=>{
         setTimeout(()=>{
-            const dog=false;
+            const dog=true;
             if (dog){
-                resolve("You can walk the dog")
+                res("dog is walking")
             }
             else{
-                reject("you aj")
+                rej("you aj")
             }
         },(1500))
     })
@@ -54,13 +54,14 @@ async function dog_Promise3(){
 async function sampleTest(){
     try{
 
-        const result2 = await dog_Promise2();
-        console.log(result2);
+        // const result2 = await dog_Promise2();
+        // console.log(result2);
       
-        const result3 = await dog_Promise3();
-        console.log(result3)
+        // const result3 = await dog_Promise3();
+        // console.log(result3)
 
         const result = await dog_Promise();
+        
         console.log(result);
 
     }
@@ -69,7 +70,7 @@ async function sampleTest(){
     }
     
 }
-// sampleTest()
+sampleTest()
 
 // setTimeout
 
@@ -183,10 +184,12 @@ function outer(){
     let count =0;
     return function inner(){
         count++;
-        console.log(count);
+        return count;
 
     };
 
 }
 const counter = outer();
-counter();
+console.log(counter)
+console.log(counter());
+
