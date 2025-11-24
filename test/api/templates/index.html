@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>API Template</title>
+    </head>
+    <body>
+        <h1>Test Api </h1>
+        <form method="post" action="{% url 'api_data' %}">
+            {% csrf_token %}
+            <label for="firstname">User ID:</label>
+            <input type="text" id="firstname" name="username" required>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" name="DOB" required>
+
+            <button type="submit">Get User Details</button>
+            
+        </form>
+    </body>
+
+</html>

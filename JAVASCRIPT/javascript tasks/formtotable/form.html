@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Form to table</title>
+</head>
+<body>
+    <div class="form">
+        <form id="myForm" >
+
+            <table>
+                <tr>
+                    <th><label for="user">Student Name :</label></th>
+                    <td><input type="text" id="user" name="username" placeholder="Enter student name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Student Name :</label></th>
+                    <td><input type="email" id="email"  name="email" placeholder="Enter student name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="Degree">Degree :</label></th>
+                    <td><input type="text" id="Degree" name="degree" placeholder="Enter latest" required></td>
+                </tr>
+                <tr>
+                    <th><label for="loc">Location :</label></th>
+                    <td><input type="text" placeholder="Current Location" id="loc" name="loc" required></td>
+                </tr>
+                <tr>
+                    <th><label for="join">Date of Join:</label></th>
+                    <td><input type="date" id="join" name="adm_date" required></td>
+                </tr>
+            </table>
+            <button type="submit" id="sub">Submit</button>
+            <button type="reset" id="reset">Reset </button> 
+
+
+        </form>
+    </div>
+   <table id="data_show">
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Degree</th>
+        <th>Location</th>
+        <th>Join Date</th>
+        <th>Action</th>
+    </thead>
+
+    <tbody id="table_body"></tbody>
+</table>
+
+    
+    <script src="./logic.js"></script>
+</body>
+</html>
